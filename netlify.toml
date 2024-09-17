@@ -1,0 +1,11 @@
+[build]
+  publish = "face-recognition/static"
+  command = "echo 'No build command needed for static files'"
+
+[[plugins]]
+  package = "@netlify/plugin-docker"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
