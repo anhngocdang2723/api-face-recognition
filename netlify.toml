@@ -1,6 +1,6 @@
 [build]
   publish = "face-recognition/static"
-  command = "echo 'No build command needed for static files'"
+  command = "docker build -t face-recognition-app ."
 
 [[plugins]]
   package = "@netlify/plugin-docker"
